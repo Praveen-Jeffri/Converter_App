@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bluescreen"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_centerInParent="true"
+        android:id="@+id/suma"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginRight="73dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Number Conversion"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/binary"
+        android:layout_width="279dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/suma"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginRight="106dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Binary Number"
+            android:textColor="@color/white"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:textColor="@color/white"
+            android:id="@+id/binary_input"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_txt"
+            android:inputType="number"
+            android:gravity="center"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/decimal"
+        android:layout_width="279dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/binary"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginRight="106dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Decimal Number"
+            android:textColor="@color/white"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+        <EditText
+            android:textColor="@color/white"
+            android:id="@+id/decimal_input"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_txt"
+            android:inputType="number"
+            android:gravity="center"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/octal"
+        android:layout_width="279dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/decimal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginRight="106dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Ocatal Number"
+            android:textColor="@color/white"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:textColor="@color/white"
+            android:id="@+id/octal_input"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_txt"
+            android:inputType="number"
+            android:gravity="center"/>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+
+        android:id="@+id/hexadecimal"
+        android:layout_width="287dp"
+        android:layout_height="106dp"
+        android:layout_below="@+id/octal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginRight="104dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Hexa-Decimal Number"
+            android:textColor="@color/white"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:textColor="@color/white"
+            android:id="@+id/hexa_input"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_txt"
+            android:gravity="center" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cnvrtbtn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hexadecimal"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="14dp"
+        android:text="Convert"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:strokeColor="@color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/resetbtn"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:strokeColor="@color/white"
+        android:layout_below="@+id/cnvrtbtn"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
